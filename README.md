@@ -43,13 +43,14 @@ espectacular`);
 Con la desestructuración podemos guardar los valores de un array o las propiedades de un objeto en variables mediante la sintaxis de parámetros rest (...)
 ```typescript
 let array = [1, 2, 3, 4, 5];
-let [primero, segundo, ...resto]  = arr;
+let [primero, segundo, ...resto] = array;
 console.log(primero, segundo, resto); // 1 2 [3, 4, 5]
 
-const usuario = {
-  id: 10001,
-  nombre: 'Sam',
-  email: 'sam74@gmail.com'
+let usuario = {
+  id: 101,
+  nombre: 'Antonio',
+  email: 'antonio@gmail.com'
 };
-const { nombre } = usuario;
+let { nombre } = usuario;
+console.log(nombre);
 ```
