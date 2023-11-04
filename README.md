@@ -4,6 +4,7 @@ Cositis de azúcar sintáctico y otros tipos de simplificación de sintaxis en J
 
 ## Tabla
  - [Nested for](#nested-for)
+ - [for..of, for..in](#forof-forin)
  - [Arrow functions](#arrow-functions)
  - [Operador spread](#operador-spread)
  - [Operador ternario](#operador-ternario)
