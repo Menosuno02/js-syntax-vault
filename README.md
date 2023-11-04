@@ -17,7 +17,7 @@ Cositis de azúcar sintáctico y otros tipos de simplificación de sintaxis en J
 
 
 ## Incremento/decremento prefijado
-Por lo general, usamos el incremento de una variable sufijado o postfix (es decir, var++). Sin embargo, lo que esto hace es que devolver el valor de la variable e incrementarlo después. Por lógica, tiene más sentido usar esta operación pero prefijadas o prefix, haciendo que primero el valor de la variable se incremente y luego se devuelva. Podemos comprobar en el ejemplo como el incremento prefijado es el que nos devuelve lo que necesitamos. Como se menciona en el título, todo lo mencionado anteriormente y el propio ejemplo se aplica también con el decremento
+Por lo general, usamos el incremento de una variable sufijado o postfix (es decir, var++). Sin embargo, lo que esto hace es que devolver el valor de la variable e incrementarlo después. Por lógica, tiene más sentido usar esta operación pero prefijadas o prefix, haciendo que primero el valor de la variable se incremente y luego se devuelva. Podemos comprobar en el ejemplo como el incremento prefijado es el que nos devuelve lo que necesitamos (sin embargo, el cambio no puede ser relevante en todos los casos como en el i++ de un for). Como se menciona en el título, todo lo dicho anteriormente y el propio ejemplo se aplica también con el decremento
 ```typescript
 let a1: number = 3;
 let b1: number = a1++;
