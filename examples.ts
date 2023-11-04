@@ -6,7 +6,7 @@ for (let i: number = 0; i < 3; ++i) for (let j: number = 0; j < 3; ++j)
 // for..of, for..in
 Object.prototype.objCustom = function () {};
 Array.prototype.arrCustom = function () {};
-const array = [3, 5, 7];
+let array: number[] = [3, 5, 7];
 array.foo = "bar";
 
 for (let i in array) console.log(i); // "0", "1", "2", "foo", "arrCustom", "objCustom"
@@ -65,7 +65,7 @@ console.log(nombre);
 
 
 // Optional chaining / Encadenamiento opcional
-usuario?.compañia?.idcompañia
+usuario?.compañia?.idcompañia;
 
 
 // Operador pipe
