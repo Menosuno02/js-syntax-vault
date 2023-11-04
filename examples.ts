@@ -1,3 +1,12 @@
+// Incremento/decremento prefijado (prefix)
+let a1: number = 3;
+let b1: number = a1++;
+console.log(a1 + ", " + b1); // 4, 3
+let a2: number = 3;
+let b2: number = ++a2;
+console.log(a2 + ", " + b2); // 4, 4
+
+
 // Nested for
 for (let i: number = 0; i < 3; ++i) for (let j: number = 0; j < 3; ++j)
     console.log(i + ", " + j);
