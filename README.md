@@ -3,6 +3,7 @@ Cositis de azúcar sintáctico y otros tipos de simplificación de sintaxis en J
 
 
 ## Tabla
+ - [Incremento/decremento prefijado](#incrementodecremento-prefijado)
  - [Nested for](#nested-for)
  - [for..of, for..in](#forof-forin)
  - [Arrow functions](#arrow-functions)
@@ -13,6 +14,18 @@ Cositis de azúcar sintáctico y otros tipos de simplificación de sintaxis en J
  - [Desestructuración](#desestructuración)
  - [Encadenamiento opcional](#encadenamiento-opcional)
  - [Operador pipe](#operador-pipe)
+
+
+## Incremento/decremento prefijado
+Por lo general, usamos el incremento de una variable sufijado o postfix (es decir, var++). Sin embargo, lo que esto hace es que devolver el valor de la variable e incrementarlo después. Por lógica, tiene más sentido usar esta operación pero prefijadas o prefix, haciendo que primero el valor de la variable se incremente y luego se devuelva. Podemos comprobar en el ejemplo como el incremento prefijado es el que nos devuelve lo que necesitamos. Como se menciona en el título, todo lo mencionado anteriormente y el propio ejemplo se aplica también con el decremento
+```typescript
+let a1: number = 3;
+let b1: number = a1++;
+console.log(a1 + ", " + b1); // 4, 3
+let a2: number = 3;
+let b2: number = ++a2;
+console.log(a2 + ", " + b2); // 4, 4
+```
 
 
 ## Nested for
